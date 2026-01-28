@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="IBIRUNGA TOUR media gallery: images, audio, and video.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBIRUNGA TOUR | Media</title>
+
+  <base href="./">
+  <link rel="icon" href="https://www.w3.org/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <header>
+    <h1>Media</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Tours</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
+        <li><a href="form.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Images</h2>
+
+      <figure>
+        <img src="https://media.istockphoto.com/id/1699209338/photo/silverback-mountain-gorilla-with-his-family.webp?a=1&b=1&s=612x612&w=0&k=20&c=X5doria68W_obJ_J-1lWIlUty-8FS6RGogTcH6xob3E=" alt="ibirunga mountains" width="520">
+        <figcaption>Ibirunga (Ibirunga) mountains.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Berggorilla-Guhonda-Sabyinyo.jpg" alt="Mountain gorilla" width="520">
+        <figcaption>Mountain gorilla in Rwanda.</figcaption>
+      </figure>
+
+      <p>Image map example (click areas):</p>
+      <img src="https://images.unsplash.com/photo-1692019007901-798d6683a42f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cndhbmRhJTIwbW91bnRhaW5zfGVufDB8fDB8fHww" alt="Map demo" usemap="#workmap" width="520">
+
+      <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="services.html" alt="Services">
+        <area shape="rect" coords="290,172,333,250" href="about.html" alt="About">
+        <area shape="circle" coords="337,300,44" href="contact.html" alt="Contact">
+      </map>
+    </section>
+
+    <section>
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Audio not supported.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <video controls width="480">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <track kind="captions" src="https://www.w3schools.com/html/tryhtml5_bunny.vtt" srclang="en" label="English" default>
+        Video not supported.
+      </video>
+    </section>
+
+    <section>
+      <h2>Canvas</h2>
+      <canvas width="300" height="120">Canvas not supported (fallback).</canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back home</a></p>
+  </footer>
+</body>
+</html>

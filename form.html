@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="IBIRUNGA TOUR booking form.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBIRUNGA TOUR | Booking</title>
+
+  <base href="./">
+  <link rel="icon" href="https://www.w3.org/favicon.ico" type="image/x-icon">
+ 
+</head>
+<body>
+  <header>
+    <h1>Booking Form</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Tours</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="form.html" aria-current="page">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Send your request</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Visitor information</legend>
+
+          <p>
+            <label for="name">Full name</label><br>
+            <input id="name" name="name" type="text" required>
+          </p>
+
+          <p>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email" required>
+          </p>
+
+          <p>
+            <label for="tour">Tour type</label><br>
+            <select id="tour" name="tour">
+              <optgroup label="Main tours">
+                <option value="gorilla">Gorilla trekking</option>
+                <option value="hike">Volcano hike</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="photo">Photography</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <p>
+            <label for="date">Preferred date</label><br>
+            <input id="date" name="date" type="date">
+          </p>
+
+          <p>
+            <label for="country">Country</label><br>
+            <input id="country" name="country" list="countries">
+            <datalist id="countries">
+              <option value="Rwanda">
+              <option value="Uganda">
+              <option value="Kenya">
+              <option value="Other">
+            </datalist>
+          </p>
+
+          <p>
+            <label for="msg">Message</label><br>
+            <textarea id="msg" name="msg" rows="4" cols="40"></textarea>
+          </p>
+
+          <p>
+            <label for="rate">Expectation level</label><br>
+            <input id="rate" name="rate" type="range" min="0" max="100" value="50">
+            <output name="out">50</output>
+          </p>
+
+          <input type="hidden" name="source" value="ibirunga-tour">
+
+          <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </p>
+        </fieldset>
+      </form>
+
+      <noscript>
+        <p>This site is HTML only. (Checklist item)</p>
+      </noscript>
+
+      <template>
+        <p>Template content (not displayed).</p>
+      </template>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back home</a></p>
+  </footer>
+</body>
+</html>
