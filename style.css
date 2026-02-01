@@ -1,0 +1,347 @@
+/* =========================================================
+   IBIRUNGA TOUR - style.css
+   Pure CSS (no frameworks, no JS)
+   ========================================================= */
+
+/* 1) Basic reset + global typography */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #f6f7fb;
+}
+
+/* Make media responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2) Layout container feeling (simple spacing) */
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* 3) Header styling */
+header {
+  background: #ffffff;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 8px 0 0 0;
+}
+
+/* 4) Navigation (Flexbox) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+
+  display: flex;              /* Flexbox */
+  flex-wrap: wrap;            /* Wrap on small screens */
+  gap: 10px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0b2b53;
+  background: #eef4ff;
+  border: 1px solid #d7e6ff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Hover + focus (required pseudo-classes) */
+nav a:hover {
+  background: #dceaff;
+  border-color: #bcd6ff;
+}
+
+nav a:focus {
+  outline: 3px solid #2b7cff;
+  outline-offset: 2px;
+}
+
+/* Optional: show current page link if aria-current is present */
+nav a[aria-current="page"] {
+  background: #0b2b53;
+  color: #ffffff;
+  border-color: #0b2b53;
+}
+
+/* 5) Main content sections */
+main {
+  margin-top: 16px;
+}
+
+section, article, aside {
+  background: #ffffff;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h3 {
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e7e7ef;
+  margin: 16px 0;
+}
+
+/* 6) Links in content */
+a {
+  color: #1c5fd4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 7) Figures */
+figure {
+  margin: 16px 0;
+  padding: 12px;
+  background: #fafbff;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* 8) Blockquote */
+blockquote {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border-left: 5px solid #2b7cff;
+  background: #f3f7ff;
+}
+
+/* 9) Tables (services.html) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #e7e7ef;
+  vertical-align: top;
+}
+
+thead th {
+  background: #0b2b53;
+  color: #fff;
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #fafbff;
+}
+
+tfoot td {
+  background: #f6f7fb;
+  font-size: 14px;
+}
+
+/* 10) Forms (form.html) */
+form {
+  margin-top: 10px;
+}
+
+fieldset {
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  font: inherit;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ccd3e0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+/* Textarea */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Focus on inputs (important) */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #2b7cff;
+  border-color: #2b7cff;
+}
+
+/* Radio/checkbox spacing */
+input[type="radio"],
+input[type="checkbox"] {
+  transform: translateY(1px);
+  margin-right: 6px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border: 1px solid #0b2b53;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background: #0b2b53;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background: #12437f;
+}
+
+button[type="reset"] {
+  background: #ffffff;
+  color: #0b2b53;
+  margin-left: 8px;
+}
+
+button[type="reset"]:hover {
+  background: #f0f4ff;
+}
+
+/* 11) Details/Summary */
+details {
+  margin-top: 10px;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fafbff;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 12) Footer */
+footer {
+  background: #ffffff;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+footer p {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+  color: #333;
+}
+
+/* 13) Iframe (map) */
+iframe {
+  width: 100%;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+}
+
+/* 14) Small screens (media query requirement) */
+@media (max-width: 600px) {
+  header, main, footer {
+    padding: 12px;
+  }
+
+  nav ul {
+    flex-direction: column;  /* stack the links */
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+}
